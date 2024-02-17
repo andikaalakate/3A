@@ -91,7 +91,7 @@ if (!isset($_SESSION['email'])) {
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mx-auto justify-center">
         <div class="container">
             <h1 class="text-5xl font-bold text-center">TimeLine Jurusan Rekayasa Perangkat Lunak</h1>
         </div>

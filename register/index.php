@@ -4,22 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
 </head>
 
 <body class="bg-no-repeat bg-cover bg-center"
-    style="background-image: url('public/assets/background/background-7.webp');">
-    <div class="hero min-h-screen">
+    style="background-image: url('../public/assets/background/background-7.webp'); transform: scaleX(-1);">
+    <div class="hero min-h-screen" style="transform: scaleX(-1);">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <div class="text-center lg:text-left lg:pl-8">
-                <h1 class="text-5xl font-bold text-white">Login sekarang!</h1>
-                <p class="py-6 text-white">Untuk mendapatkan berita terbaru mengenai Komunitas Rekayasa Perangkat Lunak.
-                </p>
-            </div>
             <div
                 class="card shrink-0 w-full max-w-sm shadow-2xl shadow-slate-900 drop-shadow-sm bg-slate-200 bg-opacity-50">
-                <form class="card-body" autocomplete="off" action="./src/backend/login.php" method="post">
+                <form class="card-body" autocomplete="off" action="../src/backend/register.php" method="post">
+                    <div class="form-control">
+                        <label class="label" for="nama">
+                            <span class="label-text text-black font-semibold text-lg">Nama</span>
+                        </label>
+                        <label
+                            class="input input-bordered flex items-center gap-2 bg-white text-black focus-within:outline-black autofill:bg-white autofill:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4 opacity-70">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+                            </svg>
+                            <input type="text" id="nama" name="nama" class="grow w-full h-full p-2" placeholder="Nama"
+                                autocomplete="off" required />
+                        </label>
+                    </div>
                     <div class="form-control">
                         <label class="label" for="email">
                             <span class="label-text text-black font-semibold text-lg">Email</span>
@@ -54,14 +64,19 @@
                         </label>
                     </div>
                     <label class="label">
-                        <a href="register/" class="label-text-alt link link-hover font-bold transition-all">Belum
-                            punya akun?</a>
+                        <a href="../" class="label-text-alt link link-hover font-bold transition-all">Sudah punya
+                            akun?</a>
                     </label>
                     <div class="form-control">
                         <button
-                            class="btn btn-primary bg-color-primary hover:bg-blue-800 text-white border-none">Login</button>
+                            class="btn btn-primary bg-color-primary hover:bg-blue-800 text-white border-none">Register</button>
                     </div>
                 </form>
+            </div>
+            <div class="text-center lg:text-right lg:pl-8">
+                <h1 class="text-5xl font-bold text-white">Register sekarang!</h1>
+                <p class="py-6 text-white">Untuk mendapatkan berita terbaru mengenai Komunitas Rekayasa Perangkat Lunak.
+                </p>
             </div>
         </div>
     </div>
